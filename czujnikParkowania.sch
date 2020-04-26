@@ -1200,7 +1200,7 @@ Wire Wire Line
 Text Label 3150 2950 0    50   ~ 0
 RGB_DI
 Text Label 3150 3050 0    50   ~ 0
-D1
+BTN
 Text Label 3150 3150 0    50   ~ 0
 SEG_A
 Text Label 3150 3250 0    50   ~ 0
@@ -1225,7 +1225,6 @@ Text Label 3100 1650 0    50   ~ 0
 SEG_2
 Text Label 3100 1750 0    50   ~ 0
 BUZZER
-NoConn ~ 3150 3050
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5EA8A0CD
@@ -1247,7 +1246,6 @@ NoConn ~ 6650 2850
 NoConn ~ 6650 2950
 NoConn ~ 6650 3050
 NoConn ~ 6650 3150
-NoConn ~ 5650 1950
 $Comp
 L power:+5V #PWR0107
 U 1 1 5EAF2D3E
@@ -1369,4 +1367,38 @@ Text Label 5200 3050 0    50   ~ 0
 SEG_2
 Text Label 5200 3150 0    50   ~ 0
 BUZZER
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5EA69D05
+P 3700 4350
+F 0 "SW?" H 3700 4635 50  0000 C CNN
+F 1 "SW_Push" H 3700 4544 50  0000 C CNN
+F 2 "" H 3700 4550 50  0001 C CNN
+F 3 "~" H 3700 4550 50  0001 C CNN
+	1    3700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1950 5200 1950
+Text Label 5200 1950 0    50   ~ 0
+BTN
+Wire Wire Line
+	3500 4350 3150 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5EAA1D9B
+P 4100 4450
+F 0 "#PWR?" H 4100 4200 50  0001 C CNN
+F 1 "GND" H 4105 4277 50  0000 C CNN
+F 2 "" H 4100 4450 50  0001 C CNN
+F 3 "" H 4100 4450 50  0001 C CNN
+	1    4100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4350 4100 4350
+Wire Wire Line
+	4100 4350 4100 4450
+Text Label 3150 4350 0    50   ~ 0
+BTN
 $EndSCHEMATC
