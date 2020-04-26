@@ -1311,11 +1311,6 @@ Connection ~ 6250 3500
 Wire Wire Line
 	6650 2250 7100 2250
 Wire Wire Line
-	7100 2250 7100 800 
-Wire Wire Line
-	7100 800  2200 800 
-Connection ~ 2200 800 
-Wire Wire Line
 	5650 1850 5200 1850
 Wire Wire Line
 	5650 2050 5200 2050
@@ -1368,13 +1363,13 @@ SEG_2
 Text Label 5200 3150 0    50   ~ 0
 BUZZER
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 5EA69D05
 P 3700 4350
-F 0 "SW?" H 3700 4635 50  0000 C CNN
+F 0 "SW1" H 3700 4635 50  0000 C CNN
 F 1 "SW_Push" H 3700 4544 50  0000 C CNN
-F 2 "" H 3700 4550 50  0001 C CNN
-F 3 "~" H 3700 4550 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 3700 4550 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/b3s-1000/mikroprzelaczniki-tact/omron-ocb/" H 3700 4550 50  0001 C CNN
 	1    3700 4350
 	1    0    0    -1  
 $EndComp
@@ -1385,10 +1380,10 @@ BTN
 Wire Wire Line
 	3500 4350 3150 4350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0129
 U 1 1 5EAA1D9B
 P 4100 4450
-F 0 "#PWR?" H 4100 4200 50  0001 C CNN
+F 0 "#PWR0129" H 4100 4200 50  0001 C CNN
 F 1 "GND" H 4105 4277 50  0000 C CNN
 F 2 "" H 4100 4450 50  0001 C CNN
 F 3 "" H 4100 4450 50  0001 C CNN
@@ -1401,4 +1396,11 @@ Wire Wire Line
 	4100 4350 4100 4450
 Text Label 3150 4350 0    50   ~ 0
 BTN
+Wire Wire Line
+	7100 650  1000 650 
+Wire Wire Line
+	1000 650  1000 1250
+Wire Wire Line
+	7100 650  7100 2250
+Connection ~ 1000 1250
 $EndSCHEMATC
