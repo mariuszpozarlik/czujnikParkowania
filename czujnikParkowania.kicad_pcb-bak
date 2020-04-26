@@ -3364,4 +3364,19 @@
       )
     )
   )
+  (zone (net 0) (net_name "") (layer Edge.Cuts) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 83.82 88.9) (xy 20.32 88.9) (xy 20.32 17.78) (xy 83.82 17.78)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 83.693 88.773) (xy 20.447 88.773) (xy 20.447 17.907) (xy 83.693 17.907)
+      )
+    )
+  )
 )
