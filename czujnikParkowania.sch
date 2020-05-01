@@ -81,7 +81,7 @@ P 2400 6000
 F 0 "Q2" V 2742 6000 50  0000 C CNN
 F 1 "IRF7404" V 2651 6000 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2600 5925 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 2400 6000 50  0001 L CNN
+F 3 "https://www.tme.eu/pl/details/ao4441/tranzystory-z-kanalem-p-smd/alpha-omega-semiconductor/" V 2400 6000 50  0001 L CNN
 	1    2400 6000
 	0    1    -1   0   
 $EndComp
@@ -1129,34 +1129,17 @@ Wire Wire Line
 	2700 3550 3150 3550
 Wire Wire Line
 	2700 3650 3150 3650
-Wire Wire Line
-	2700 2750 4000 2750
-$Comp
-L power:GND #PWR0127
-U 1 1 5EBE9E5B
-P 4000 3500
-F 0 "#PWR0127" H 4000 3250 50  0001 C CNN
-F 1 "GND" H 4005 3327 50  0000 C CNN
-F 2 "" H 4000 3500 50  0001 C CNN
-F 3 "" H 4000 3500 50  0001 C CNN
-	1    4000 3500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R4
 U 1 1 5EBEA221
-P 4000 3200
-F 0 "R4" H 4070 3246 50  0000 L CNN
-F 1 "1k" H 4070 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3930 3200 50  0001 C CNN
-F 3 "~" H 4000 3200 50  0001 C CNN
-	1    4000 3200
+P 3050 2450
+F 0 "R4" H 3120 2496 50  0000 L CNN
+F 1 "10k" H 3120 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2980 2450 50  0001 C CNN
+F 3 "~" H 3050 2450 50  0001 C CNN
+	1    3050 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 2750 4000 3050
-Wire Wire Line
-	4000 3350 4000 3500
 NoConn ~ 1500 1450
 NoConn ~ 1500 1550
 NoConn ~ 2700 2650
@@ -1527,4 +1510,21 @@ Wire Wire Line
 	7100 5150 7000 5150
 Wire Wire Line
 	7000 5150 7000 5200
+$Comp
+L power:+5V #PWR?
+U 1 1 5EB19907
+P 3050 2200
+F 0 "#PWR?" H 3050 2050 50  0001 C CNN
+F 1 "+5V" H 3065 2373 50  0000 C CNN
+F 2 "" H 3050 2200 50  0001 C CNN
+F 3 "" H 3050 2200 50  0001 C CNN
+	1    3050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2200 3050 2300
+Wire Wire Line
+	3050 2600 3050 2750
+Wire Wire Line
+	3050 2750 2700 2750
 $EndSCHEMATC
